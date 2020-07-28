@@ -378,9 +378,6 @@
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-permalink">https://luhongyan.gitee.io/blog/post/429b577f.html</div>
   
-  <div id="valine-path">none</div>
-  <div id="valine-placeholder">none</div>
-  
   
 </div>
 
@@ -751,18 +748,7 @@ Hexo原项目已经停止维护，NexTv6和v7版本有社区维护[https://githu
 
   
     
-  <article class="post white-box reveal comments shadow">
-    <section class="article typo">
-      <p ct><i class='fas fa-comments'></i> 评论</p>
-      
-      <section id="comments">
-        <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-      </section>
-    </section>
-  </article>
+  
 
 
   
@@ -932,79 +918,6 @@ Hexo原项目已经停止维护，NexTv6和v7版本有社区维护[https://githu
 
 
 <!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
-
-  
-  
-<script src="/js/valine.js"></script>
-
-
-<script>
-  var GUEST_INFO = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail'.split(',').filter(function (item) {
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
-  var requiredFields = 'nick'.split(',').filter(function (item) {
-    return REQUIRED_FIELDS.indexOf(item) > -1
-  });
-
-  function emoji(path, idx, ext) {
-    return path + "/" + path + "-" + idx + "." + ext;
-  }
-
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-
-  function pjax_valine() {
-    var valinePath = $.trim($('#valine-path').text()) === "none" ?
-            window.location.pathname : $.trim($('#valine-path').text());
-
-    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
-            "快来评论吧~" : $.trim($('#valine-placeholder').text());
-
-    var ALLPATH = '';
-    if(ALLPATH != '') valinePath = ALLPATH;
-
-    var valine = new Valine();
-    valine.init({
-      el: '#valine_container',
-      meta: meta,
-      placeholder: valinePlaceholder,
-      path: valinePath,
-      appId: "",
-      appKey: "",
-      pageSize: '10',
-      avatar: 'robohash',
-      lang: 'zh-cn',
-      visitor: 'true',
-      highlight: 'true',
-      mathJax: 'false',
-      enableQQ: 'true',
-      requiredFields: requiredFields,
-      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps
-    })
-  }
-
-  $(function () {
-    pjax_valine();
-  });
-</script>
-
 
 
 
@@ -1345,8 +1258,6 @@ Hexo原项目已经停止维护，NexTv6和v7版本有社区维护[https://githu
         
           pjax_initCopyCode();
         
-        
-          pjax_valine();
         
         
         
