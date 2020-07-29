@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：tag1 - MR.L&#39; BLOG</title>
+  <title>所有标签 - MR.L&#39; BLOG</title>
   
 
   
@@ -82,46 +80,61 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover ' style="display: none;">
+    <cover class='cover tag' style="display: none;">
       <div class='cover-body'>
   <div class='a'>
     
-      <img no-lazy class='logo' src='https://i.loli.net/2020/07/22/2OYbPxZjhdFce3L.png'/>
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/logo.png'/>
     
     
     
   </div>
   <div class='b'>
-    <div class='menu navigation featured'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
+    
+    <div class='menu navigation search'>
       <div class='list-h'>
         
           
-            <a href="/blog/v3/getting-started/"
+            <a href="/blog/"
               
               
-              id="blogv3getting-started">
-              <img src='https://i.loli.net/2020/07/24/GaeXvVAdtJkCYT3.png'><p>文档</p>
+              id="blog">
+              <i class='fas fa-home fa-fw'></i><p>主页</p>
             </a>
           
-            <a href="/blog/faqs/"
+            <a href="/blog/categories/"
               
               
-              id="blogfaqs">
-              <img src='https://i.loli.net/2020/07/24/cxRslyWzk2OTP9r.png'><p>帮助</p>
+              id="blogcategories">
+              <i class='fas fa-folder-open fa-fw'></i><p>分类</p>
             </a>
           
-            <a href="/blog/examples/"
+            <a href="/blog/tags/"
               
               
-              id="blogexamples">
-              <img src='https://i.loli.net/2020/07/24/9kHJZNA8m4RBxhp.png'><p>示例</p>
+              id="blogtags">
+              <i class='fas fa-tags fa-fw'></i><p>标签</p>
             </a>
           
-            <a href="/blog/contributors/"
+            <a href="/blog/friends/"
               
               
-              id="blogcontributors">
-              <img src='https://i.loli.net/2020/07/24/skczZ1VdMGRbTLi.png'><p>社区</p>
+              id="blogfriends">
+              <i class='fas fa-link fa-fw'></i><p>友链</p>
+            </a>
+          
+            <a href="/blog/about/"
+              
+              
+              id="blogabout">
+              <i class='fas fa-info-circle fa-fw'></i><p>关于</p>
             </a>
           
         
@@ -170,7 +183,7 @@
                   
                     id="blog"
                   >
-                  <i class='fas fa-rss fa-fw'></i>主页
+                  <i class='fas fa-home fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -212,13 +225,13 @@
             
             
               <li>
-                <a class="flat-box" href=/blog/archives/
+                <a class="flat-box" href=/blog/friends/
                   
                   
                   
-                    id="blogarchives"
+                    id="blogfriends"
                   >
-                  <i class='fas fa-archive fa-fw'></i>归档
+                  <i class='fas fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -227,38 +240,17 @@
           
             
             
-              
-                <li>
-                  <a class="flat-box">
-                    <i class='fas fa-compact-disc fa-fw music'></i>背景音乐
-                  </a>
-                  <ul class="list-v">
-                    <li>
-                      <div class="aplayer-container">
-                        
-
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='false'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='340px'
-      server='netease'
-      type='playlist'
-      id='3175833810'
-      list-folded='true'>
-    </meting-js>
-  
-
-
-                      </div>
-                    </li>
-                  </ul>
-                <li>
-              
+              <li>
+                <a class="flat-box" href=/blog/about/
+                  
+                  
+                  
+                    id="blogabout"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
             
           
           
@@ -289,7 +281,7 @@
                   
                     id="blog"
                   >
-                  <i class='fas fa-rss fa-fw'></i>主页
+                  <i class='fas fa-home fa-fw'></i>主页
                 </a>
                 
               </li>
@@ -331,13 +323,13 @@
               
             
               <li>
-                <a class="flat-box" href=/blog/archives/
+                <a class="flat-box" href=/blog/friends/
                   
                   
                   
-                    id="blogarchives"
+                    id="blogfriends"
                   >
-                  <i class='fas fa-archive fa-fw'></i>归档
+                  <i class='fas fa-link fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -346,7 +338,17 @@
             
               
             
-              
+              <li>
+                <a class="flat-box" href=/blog/about/
+                  
+                  
+                  
+                    id="blogabout"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
             
           
             
@@ -374,7 +376,10 @@
   <div id="pjax-ispage">false</div>
   <div id="pjax-pageTitle"></div>
   <div id="pjax-enable-cover">true</div>
-  <div id="pjax-permalink"></div>
+  <div id="pjax-permalink">https://luhongyan.gitee.io/blog/tags/index.html</div>
+  
+  <div id="valine-path">none</div>
+  <div id="valine-placeholder">none</div>
   
   
 </div>
@@ -409,131 +414,23 @@
 <div class='l_main'>
   
     
-      
-  <section class="post-list ">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post white-box shadow reveal ">
-  
-
-
-  <section class='meta'>
-    
-      
-      
-      <div class="meta" id="header-meta">
-        
-          
-  <h2 class="title">
-    <a href="/blog/post/4a17b156.html">
-      Hello World
-    </a>
-  </h2>
-
-
-        
-        <div class='new-meta-box'>
-          
-            
-          
-            
+      <section class="post-list ">
+        <div class='post-wrapper'>
+          <article id="archive-page" class="post article white-box reveal shadow">
+            <section class="archive">
+              <div class="archive-item archive-year mark">
+                <h2>所有标签</h2>
+              </div>
+              <div class="archive-item all-tags">
+                
+                <a href="/blog/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/blog/tags/hexo/" style="font-size: 14px; color: #999">hexo</a>
+              </div>
+              <br>
               
-<div class='new-meta-item author'>
-  <a href="/" rel="nofollow">
-    <img no-lazy src="assets/avatar.jpg">
-    <p>MR.L</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-  
-  <div class='new-meta-item category'>
-    <a href='/blog/categories/test/' rel="nofollow">
-      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>test</p>
-    </a>
-  </div>
-
-
-            
-          
-            
-              <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>2020-07-28</p>
-  </a>
-</div>
-
-            
-          
-            
-              
-
-            
-          
-            
-          
-            
-          
-            
-              
-
-            
-          
+            </section>
+          </article>
         </div>
-        
-          <hr>
-        
-      </div>
-    
-  </section>
-
-
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-      
-    </div>
-    
-      
-        <div class="button readmore">
-          <a href="/blog/post/4a17b156.html">
-            阅读全文 <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-      
-    
-  </section>
-</article>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
-
-
+      </section>
     
   
 </div>
@@ -548,19 +445,63 @@
     
       
         <div class='avatar'>
-          <img no-lazy src='assets/avatar.jpg'/>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/avatar_messi.jpg'/>
         </div>
       
     
     
       <div class='text'>
         
-          <h2>♨♛☞ MR.L ☜♛♨</h2>
+          <h2>☜ MR.L ☞</h2>
         
         
         
       </div>
     
+
+    <div id="binft"></div>
+    <script>
+      var binft = function (r) {
+        function t() {
+          return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+          return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+          }
+          return n
+        }
+        function i() {
+          var t = o[c.skillI];
+          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["No cross,No crown"].map(function (r) {
+        return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+          text: "",
+          prefixP: -s,
+          skillI: 0,
+          skillP: 0,
+          direction: "forward",
+          delay: a,
+          step: g
+        };
+        i()
+      };
+      binft(document.getElementById('binft'));
+    </script>
+
     
       <div class="social-wrapper">
         
@@ -582,58 +523,9 @@
   
     
     
-  
-
-  <section class="widget category shadow desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
 
 
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/blog/categories/test/" href="/blog/categories/test/"
-            id="blogcategoriestest"
-            ><div class='name'>test</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/blog/categories/%E5%8D%9A%E5%AE%A2/" href="/blog/categories/%E5%8D%9A%E5%AE%A2/"
-            id="blogcategoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/blog/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/blog/tags/next/" style="font-size: 14px; color: #999">next</a> <a href="/blog/tags/tag1/" style="font-size: 14px; color: #999">tag1</a> <a href="/blog/tags/tag2/" style="font-size: 14px; color: #999">tag2</a>
-    </div>
-  </section>
-
-
-  
 
   
 
@@ -721,7 +613,7 @@
 
     <script type="text/javascript">
       $(function(){
-        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg"];
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg"];
         if ('true' == 'true') {
           function shuffle(arr){
             /*From countercurrent-time*/
@@ -735,8 +627,8 @@
           }
           shuffle(imgs);
         }
-        if ('.cover') {
-          $('.cover').backstretch(
+        if ('') {
+          $('').backstretch(
             imgs,
           {
             duration: "20000",
@@ -769,65 +661,82 @@
 
 <!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
 
+  
+  
+<script src="/blog/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    var valinePath = $.trim($('#valine-path').text()) === "none" ?
+            window.location.pathname : $.trim($('#valine-path').text());
+
+    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
+            "快来评论吧~" : $.trim($('#valine-placeholder').text());
+
+    var ALLPATH = '';
+    if(ALLPATH != '') valinePath = ALLPATH;
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: valinePlaceholder,
+      path: valinePath,
+      appId: "",
+      appKey: "",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
 
 
 <!-- darkmodejs -->
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-  <script type="text/javascript">
-	function getClientHeight(){
-	  var clientHeight=0;
-	  if(document.body.clientHeight&&document.documentElement.clientHeight){
-	  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-	  }else{
-	  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-	  }
-	  return clientHeight;
-	}
-	function supportCss3(style) {
-		var prefix = ['webkit', 'Moz', 'ms', 'o'],
-		i,
-		humpString = [],
-		htmlStyle = document.documentElement.style,
-		_toHumb = function (string) {
-		return string.replace(/-(\w)/g, function ($0, $1) {
-		return $1.toUpperCase();
-		});
-		};
-		for (i in prefix)
-		humpString.push(_toHumb(prefix[i] + '-' + style));
-		humpString.push(_toHumb(style));
-		for (i in humpString)
-		if (humpString[i] in htmlStyle) return true;
-		return false;
-	};
-	//配置信息
-	var options = {
-	  bottom: '32px',
-	  right: 'unset',
-	  left: '16px',
-	  time: '0s',
-	  mixColor: '#f4f4f4',
-	  backgroundColor: '#f4f4f4',
-	  buttonColorDark: '#100f2c',
-	  buttonColorLight: '#f4f4f4',
-	  saveInCookies: true,
-	  label: '🌓',
-	  autoMatchOsTheme: true
-	};
-	// 卡片兼容处理 mix-blend-mode 与 effect: [shadow, floatable, blur] 冲突???
-	function pjax_darkmodejs(){
-		
-	}
-	// mix-blend-mode support?
-	if(supportCss3('mix-blend-mode')){
-		const darkmode = new Darkmode(options);
-		darkmode.showWidget();
-		pjax_darkmodejs();
-	}
-  </script>
 
 
 <!-- 复制 -->
@@ -1095,8 +1004,8 @@
         pjax_fancybox();
         
           
-          if ('.cover') {
-            $('.cover').backstretch("resize");
+          if ('') {
+            $('').backstretch("resize");
           } else {
             $.backstretch("resize");
           }
@@ -1109,11 +1018,11 @@
           pjax_initCopyCode();
         
         
+          pjax_valine();
         
         
         
         
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);
@@ -1129,5 +1038,6 @@
 
     
   </div>
+  
 </body>
 </html>

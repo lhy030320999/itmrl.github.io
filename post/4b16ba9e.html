@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html>
+<head hexo-theme='https://volantis.js.org/#3.0-beta2'>
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>使用Hexo+Volantis搭建精美博客 - MR.L&#39; BLOG</title>
+  
+    <meta name="keywords" content="hexo,Volantis">
+  
+
+  
+    <meta name="description" content="Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。">
+  
+
+  <!-- feed -->
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13/css/all.min.css">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+  
+
+  
+
+  <!-- import link -->
+  
+
+  
+  
+    
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+
+  
+  
+    <!-- ba -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+	  setTimeout(function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d4cb3b8da9479bbba8e2dc865cd50044";
+		hm.defer=true;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+	  }, 5000);
+    })();
+    </script>
+  
+</head>
+
+<body>
+  
+  
+  
+  <div class="cover-wrapper">
+    <cover class='cover post' style="display: none;">
+      <div class='cover-body'>
+  <div class='a'>
+    
+      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/logo.png'/>
+    
+    
+    
+  </div>
+  <div class='b'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="" />
+          <i class="icon fas fa-search fa-fw"></i>
+        </form>
+      </div>
+    
+    <div class='menu navigation search'>
+      <div class='list-h'>
+        
+          
+            <a href="/blog/"
+              
+              
+              id="blog">
+              <i class='fas fa-home fa-fw'></i><p>主页</p>
+            </a>
+          
+            <a href="/blog/categories/"
+              
+              
+              id="blogcategories">
+              <i class='fas fa-folder-open fa-fw'></i><p>分类</p>
+            </a>
+          
+            <a href="/blog/tags/"
+              
+              
+              id="blogtags">
+              <i class='fas fa-tags fa-fw'></i><p>标签</p>
+            </a>
+          
+            <a href="/blog/friends/"
+              
+              
+              id="blogfriends">
+              <i class='fas fa-link fa-fw'></i><p>友链</p>
+            </a>
+          
+            <a href="/blog/about/"
+              
+              
+              id="blogabout">
+              <i class='fas fa-info-circle fa-fw'></i><p>关于</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+    </cover>
+    <header class="l_header shadow blur">
+  <div class='container'>
+  <div class='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h' id="pjax-header-nav-list">
+        <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/blog/'>
+          
+            <img no-lazy class='logo' src='https://i.loli.net/2020/07/22/Xw9pZTkyhSPOY8M.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/blog/
+                  
+                  
+                  
+                    id="blog"
+                  >
+                  <i class='fas fa-home fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/blog/categories/
+                  
+                  
+                  
+                    id="blogcategories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/blog/tags/
+                  
+                  
+                  
+                    id="blogtags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/blog/friends/
+                  
+                  
+                  
+                    id="blogfriends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="flat-box" href=/blog/about/
+                  
+                  
+                  
+                    id="blogabout"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/blog/
+                  
+                  
+                  
+                    id="blog"
+                  >
+                  <i class='fas fa-home fa-fw'></i>主页
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/blog/categories/
+                  
+                  
+                  
+                    id="blogcategories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/blog/tags/
+                  
+                  
+                  
+                    id="blogtags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/blog/friends/
+                  
+                  
+                  
+                    id="blogfriends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="flat-box" href=/blog/about/
+                  
+                  
+                  
+                    id="blogabout"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  </div>
+  
+
+
+  <div class="l_body nocover">
+    <div class='body-wrapper' id="pjax-container">
+      
+        <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+
+
+<div id="pjax-data" style="display: none">
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">使用Hexo+Volantis搭建精美博客</div>
+  <div id="pjax-enable-cover">true</div>
+  <div id="pjax-permalink">https://luhongyan.gitee.io/blog/post/4b16ba9e.html</div>
+  
+  <div id="valine-path">none</div>
+  <div id="valine-placeholder">none</div>
+  
+  
+</div>
+
+
+<script>
+  // 处理封面 此时 jquery 还没加载
+  if ("none" == "none") { // 移除封面
+    document.getElementsByClassName('cover')[0].style.display = "none";
+    document.getElementsByClassName('l_body')[0].classList.add("nocover");
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
+  } else {
+    if ("none" == "blog") { // 半屏
+      document.getElementsByClassName('cover')[0].classList.remove("full");
+      document.getElementsByClassName('cover')[0].classList.add("half");
+      document.getElementsByClassName('scroll-down')[0].style.display = "none";
+    } else if ("none" == "docs") { // 全屏
+      document.getElementsByClassName('cover')[0].classList.remove("half");
+      document.getElementsByClassName('cover')[0].classList.add("full");
+      document.getElementsByClassName('scroll-down')[0].style.display = "";
+    }
+    document.getElementsByClassName('cover')[0].style.display = "";
+    document.getElementsByClassName('l_body', 'show')[0].classList.remove("nocover");
+    document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.remove("show");
+  }
+</script>
+
+      
+      
+
+<div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box reveal shadow article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+      
+      
+        <a title='使用Hexo+Volantis搭建精美博客' href='/blog/post/4b16ba9e.html'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/Volantis.jpg'></a>
+      
+      <div class="meta" id="header-meta">
+        
+          
+  <h1 class="title">
+    <a href="/blog/post/4b16ba9e.html">
+      使用Hexo+Volantis搭建精美博客
+    </a>
+  </h1>
+
+
+        
+        <div class='new-meta-box'>
+          
+            
+          
+            
+              
+<div class='new-meta-item author'>
+  <a href="/" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/avatar_messi.jpg">
+    <p>MR.L</p>
+  </a>
+</div>
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>2020-07-27</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  
+  <div class='new-meta-item category'>
+    <a href='/blog/categories/%E5%8D%9A%E5%AE%A2/Volantis/' rel="nofollow">
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <p>博客/Volantis</p>
+    </a>
+  </div>
+
+
+            
+          
+            
+              
+            
+          
+        </div>
+        
+          <hr>
+        
+      </div>
+    
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          
+          
+          <p>Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。</p>
+<a id="more"></a>
+
+<h2 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h2><p>如果您从旧版本更新或着其它主题迁移，请确保环境版本不要太低，否则会产生兼容性问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Hexo: 4.2</span><br><span class="line">hexo-cli: 3.1</span><br><span class="line">node.js: 12.16 # LTS版</span><br><span class="line">npm: 6.13</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载与安装"><a href="#下载与安装" class="headerlink" title="下载与安装"></a>下载与安装</h2><p><strong>第 1/3 步：下载主题源码到 themes/ 文件夹</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;volantis-x&#x2F;hexo-theme-volantis themes&#x2F;volantis</span><br><span class="line"></span><br><span class="line"># 或者使用国内镜像</span><br><span class="line">git clone https:&#x2F;&#x2F;e.coding.net&#x2F;volantis&#x2F;volantis&#x2F;volantis.git themes&#x2F;volantis</span><br></pre></td></tr></table></figure>
+
+<p><strong>第 2/3 步：修改站点配置文件</strong></p>
+<blockquote>
+<p>blog/_config.yml</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: volantis</span><br></pre></td></tr></table></figure>
+
+<p><strong>第 3/3 步：检查并安装依赖</strong></p>
+<blockquote>
+<p>安装 Hexo 搜索的依赖包：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-generator-search hexo-generator-json-content</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>安装 stylus 渲染器：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -S hexo-renderer-stylus</span><br></pre></td></tr></table></figure>
+
+<h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><p><a href="https://volantis.js.org" target="_blank" rel="noopener">https://volantis.js.org</a></p>
+<h2 id="设置导航栏"><a href="#设置导航栏" class="headerlink" title="设置导航栏"></a>设置导航栏</h2><p><strong>新建一个文件，专门存放导航栏菜单配置，文件的路径为：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog&#x2F;source&#x2F;_data&#x2F;menu.yml</span><br></pre></td></tr></table></figure>
+
+<p><strong>文件的内容为：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">- name: 主页</span><br><span class="line">  icon: fas fa-rss</span><br><span class="line">  url: &#x2F;</span><br><span class="line">- name: 分类</span><br><span class="line">  icon: fas fa-folder-open</span><br><span class="line">  url: categories&#x2F;</span><br><span class="line">- name: 标签</span><br><span class="line">  icon: fas fa-tags</span><br><span class="line">  url: tags&#x2F;</span><br><span class="line">- name: 归档</span><br><span class="line">  icon: fas fa-archive</span><br><span class="line">  url: archives&#x2F;</span><br><span class="line">- name: 更多</span><br><span class="line">  icon: fas fa-ellipsis-v</span><br><span class="line">  rows:</span><br><span class="line">    - name: 主题源码</span><br><span class="line">      url: https:&#x2F;&#x2F;github.com&#x2F;volantis-x&#x2F;hexo-theme-volantis&#x2F;</span><br><span class="line">    - name: 更新日志</span><br><span class="line">      url: https:&#x2F;&#x2F;github.com&#x2F;volantis-x&#x2F;hexo-theme-volantis&#x2F;releases&#x2F;</span><br><span class="line">    - name: hr</span><br><span class="line">    - name: 有疑问？</span><br><span class="line">      rows:</span><br><span class="line">        - name: 看 FAQ</span><br><span class="line">          url: faqs&#x2F;</span><br><span class="line">        - name: 看 本站源码</span><br><span class="line">          url: https:&#x2F;&#x2F;github.com&#x2F;volantis-x&#x2F;volantis-docs&#x2F;</span><br><span class="line">        - name: 提 Issue</span><br><span class="line">          url: https:&#x2F;&#x2F;github.com&#x2F;volantis-x&#x2F;hexo-theme-volantis&#x2F;issues&#x2F;</span><br><span class="line">    - name: hr</span><br><span class="line">    - name: 公告和测试博文</span><br><span class="line">      url: archives&#x2F;</span><br><span class="line">    - name: 示例博客</span><br><span class="line">      url: examples&#x2F;</span><br><span class="line">    - name: 特别感谢</span><br><span class="line">      url: contributors&#x2F;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h2><p><strong>在子菜单中，新增一个 icon: fas fa-compact-disc 的“菜单”就会被渲染成一个 APlayer 播放器</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- name: 背景音乐</span><br><span class="line">  icon: fas fa-compact-disc</span><br></pre></td></tr></table></figure>
+
+<h2 id="模块化布局"><a href="#模块化布局" class="headerlink" title="模块化布局"></a>模块化布局</h2><p><strong>可以自由决定每个页面是否显示侧边栏，侧边栏显示什么小部件，正文区域显示什么卡片，文章卡片显示什么 meta 信息。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># The following can be written in &#96;blog&#x2F;source&#x2F;_data&#x2F;layout.yml&#96;</span><br><span class="line"># 文章列表（主页、自定义的列表）布局</span><br><span class="line">on_list:</span><br><span class="line">  # 列表中每一篇文章的meta信息</span><br><span class="line">  meta: [title, author, category, date, wordcount, counter, valinecount, pin]</span><br><span class="line">  # 列表类页面的侧边栏</span><br><span class="line">  sidebar: [blogger, category, tagcloud, qrcode]</span><br><span class="line">  # read more button</span><br><span class="line">  readmore: 阅读全文 &lt;i class&#x3D;&quot;fas fa-chevron-right&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line"># 页面布局</span><br><span class="line">on_page:</span><br><span class="line">  # 文章页面主体元素，你也可以在页面的Front-matter中设置</span><br><span class="line">  body: [article, comments]</span><br><span class="line">  # 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span><br><span class="line">  # 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span><br><span class="line">  # 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span><br><span class="line">  meta:</span><br><span class="line">    header: [title, author, category, date, pin]</span><br><span class="line">    footer: [updated, tags, btns, share]</span><br><span class="line">  # 文章页面的侧边栏</span><br><span class="line">  sidebar: [qrcode, toc]</span><br><span class="line"># 文章布局，参数继承自 on_page</span><br><span class="line">on_post:</span><br><span class="line">  # 文章页脚，自动在每一篇文章末尾添加</span><br><span class="line">  article_footer: [references, related_repos, copyright, donate]</span><br><span class="line"># 其他的页面布局暂时等于 on_list</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置文章作者信息"><a href="#配置文章作者信息" class="headerlink" title="配置文章作者信息"></a>配置文章作者信息</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># meta library</span><br><span class="line">meta:</span><br><span class="line">  # 文章标题</span><br><span class="line">  title: # 暂无配置</span><br><span class="line">  # 默认文章作者（可在front-matter中覆盖）</span><br><span class="line">  author:</span><br><span class="line">    avatar: &#x2F;assets&#x2F;avatar.jpg</span><br><span class="line">    name: Mr.L</span><br><span class="line">    url: &#x2F;</span><br></pre></td></tr></table></figure>
+
+<h2 id="页面配置"><a href="#页面配置" class="headerlink" title="页面配置"></a>页面配置</h2><p><strong>如无特殊说明，本页面的配置信息写在 页面 文件的 front-matter 中。</strong></p>
+<h2 id="布局模板"><a href="#布局模板" class="headerlink" title="布局模板"></a>布局模板</h2><table>
+<thead>
+<tr>
+<th>取值</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>page</td>
+<td>独立页面</td>
+</tr>
+<tr>
+<td>post</td>
+<td>文章页面</td>
+</tr>
+<tr>
+<td>category</td>
+<td>分类页面</td>
+</tr>
+<tr>
+<td>tag</td>
+<td>标签页面</td>
+</tr>
+<tr>
+<td>links</td>
+<td>友链页面</td>
+</tr>
+<tr>
+<td>list</td>
+<td>列表页面</td>
+</tr>
+</tbody></table>
+<h2 id="front-matter"><a href="#front-matter" class="headerlink" title="front-matter"></a>front-matter</h2><p><strong>front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+<th>值类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>layout</td>
+<td>布局模版</td>
+<td>tring</td>
+<td>-</td>
+</tr>
+<tr>
+<td>title</td>
+<td>页面标题</td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td>seo_title</td>
+<td>网页标题</td>
+<td>String</td>
+<td>page.title</td>
+</tr>
+<tr>
+<td>short_title</td>
+<td>页面标题（在group列表中显示）</td>
+<td>String</td>
+<td>page.title</td>
+</tr>
+<tr>
+<td>date</td>
+<td>创建时间</td>
+<td>Date</td>
+<td>文件创建时间</td>
+</tr>
+<tr>
+<td>updated</td>
+<td>更新日期</td>
+<td>Date</td>
+<td>文件修改时间</td>
+</tr>
+<tr>
+<td>permalink</td>
+<td>覆盖文章网址</td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td>music</td>
+<td>内部音乐控件</td>
+<td>[Object]</td>
+<td>-</td>
+</tr>
+<tr>
+<td>robots</td>
+<td>robots</td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>页面关键词</td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td>description</td>
+<td>页面描述、摘要</td>
+<td>String</td>
+<td>-</td>
+</tr>
+<tr>
+<td>cover</td>
+<td>是否显示封面</td>
+<td>Bool</td>
+<td>true</td>
+</tr>
+<tr>
+<td>meta</td>
+<td>文章或页面的meta信息</td>
+<td>Bool, Array</td>
+<td>theme.layout.*.meta</td>
+</tr>
+<tr>
+<td>sidebar</td>
+<td>页面侧边栏</td>
+<td>Bool, Array</td>
+<td>theme.layout.*.sidebar</td>
+</tr>
+<tr>
+<td>body</td>
+<td>页面主体元素</td>
+<td>Array</td>
+<td>theme.layout.on_page.body</td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td>是否渲染公式</td>
+<td>Bool, String</td>
+<td>false</td>
+</tr>
+<tr>
+<td>thumbnail</td>
+<td>缩略图</td>
+<td>String</td>
+<td>false</td>
+</tr>
+<tr>
+<td>icons</td>
+<td>图标</td>
+<td>Array</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>pin</td>
+<td>是否置顶</td>
+<td>Bool, String</td>
+<td>false</td>
+</tr>
+</tbody></table>
+<p><strong>layout:post 时特有的字段：</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+<th>值类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>author</td>
+<td>文章作者</td>
+<td>[Object]</td>
+<td>config.author</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>分类</td>
+<td>String, Array</td>
+<td>-</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>标签</td>
+<td>String, Array</td>
+<td>-</td>
+</tr>
+<tr>
+<td>toc</td>
+<td>是否生成目录</td>
+<td>Bool</td>
+<td>true</td>
+</tr>
+</tbody></table>
+<p><strong>author</strong></p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>含义</th>
+<th>值类型</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>作者名</td>
+<td>String</td>
+<td>config.author</td>
+</tr>
+<tr>
+<td>avatar</td>
+<td>头像</td>
+<td>String</td>
+<td>config.avatar</td>
+</tr>
+<tr>
+<td>url</td>
+<td>链接</td>
+<td>String</td>
+<td>config.url</td>
+</tr>
+</tbody></table>
+<h2 id="显示迷你音乐播放器"><a href="#显示迷你音乐播放器" class="headerlink" title="显示迷你音乐播放器"></a>显示迷你音乐播放器</h2><p><strong>标题右边显示迷你音乐播放器，支持的字段有：server、type、id。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">music:</span><br><span class="line">  server: netease   # netease, tencent, kugou, xiami, baidu</span><br><span class="line">  type: song        # song, playlist, album, search, artist</span><br><span class="line">  id: 16846091      # song id &#x2F; playlist id &#x2F; album id &#x2F; search keyword</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="标题右边显示缩略图"><a href="#标题右边显示缩略图" class="headerlink" title="标题右边显示缩略图"></a>标题右边显示缩略图</h2><p><strong>略图仅在文章列表和文章页面显示，不会在归档页面显示。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">thumbnail: https:&#x2F;&#x2F;img.vim-cn.com&#x2F;17&#x2F;0c7b02722686d1527a1df807dae0794d995860.png</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加彩色滚动变换字体"><a href="#添加彩色滚动变换字体" class="headerlink" title="添加彩色滚动变换字体"></a>添加彩色滚动变换字体</h2><p>转自 <a href="https://itrhx.blog.csdn.net/article/details/85420403" target="_blank" rel="noopener">Hexo博客优化之博客美化系列</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;binft&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var binft &#x3D; function (r) &#123;</span><br><span class="line">      function t() &#123;</span><br><span class="line">        return b[Math.floor(Math.random() * b.length)]</span><br><span class="line">      &#125;  </span><br><span class="line">      function e() &#123;</span><br><span class="line">        return String.fromCharCode(94 * Math.random() + 33)</span><br><span class="line">      &#125;</span><br><span class="line">      function n(r) &#123;</span><br><span class="line">        for (var n &#x3D; document.createDocumentFragment(), i &#x3D; 0; r &gt; i; i++) &#123;</span><br><span class="line">          var l &#x3D; document.createElement(&quot;span&quot;);</span><br><span class="line">          l.textContent &#x3D; e(), l.style.color &#x3D; t(), n.appendChild(l)</span><br><span class="line">        &#125;</span><br><span class="line">        return n</span><br><span class="line">      &#125;</span><br><span class="line">      function i() &#123;</span><br><span class="line">        var t &#x3D; o[c.skillI];</span><br><span class="line">        c.step ? c.step-- : (c.step &#x3D; g, c.prefixP &lt; l.length ? (c.prefixP &gt;&#x3D; 0 &amp;&amp; (c.text +&#x3D; l[c.prefixP]), c.prefixP++) : &quot;forward&quot; &#x3D;&#x3D;&#x3D; c.direction ? c.skillP &lt; t.length ? (c.text +&#x3D; t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction &#x3D; &quot;backward&quot;, c.delay &#x3D; a) : c.skillP &gt; 0 ? (c.text &#x3D; c.text.slice(0, -1), c.skillP--) : (c.skillI &#x3D; (c.skillI + 1) % o.length, c.direction &#x3D; &quot;forward&quot;)), r.textContent &#x3D; c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)</span><br><span class="line">      &#125;</span><br><span class="line">      var l &#x3D; &quot;&quot;,</span><br><span class="line">      o &#x3D; [&quot;青青陵上柏，磊磊涧中石。&quot;, &quot;人生天地间，忽如远行客。&quot;,&quot;斗酒相娱乐，聊厚不为薄。&quot;, &quot;驱车策驽马，游戏宛与洛。&quot;,&quot;洛中何郁郁，冠带自相索。&quot;,&quot;长衢罗夹巷，王侯多第宅。&quot;,&quot;两宫遥相望，双阙百余尺。&quot;,&quot;极宴娱心意，戚戚何所迫？&quot;].map(function (r) &#123;</span><br><span class="line">      return r + &quot;&quot;</span><br><span class="line">      &#125;),</span><br><span class="line">      a &#x3D; 2,</span><br><span class="line">      g &#x3D; 1,</span><br><span class="line">      s &#x3D; 5,</span><br><span class="line">      d &#x3D; 75,</span><br><span class="line">      b &#x3D; [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],</span><br><span class="line">      c &#x3D; &#123;</span><br><span class="line">        text: &quot;&quot;,</span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line">        direction: &quot;forward&quot;,</span><br><span class="line">        delay: a,</span><br><span class="line">        step: g</span><br><span class="line">      &#125;;</span><br><span class="line">      i()</span><br><span class="line">      &#125;;</span><br><span class="line">      binft(document.getElementById(&#39;binft&#39;));</span><br><span class="line">  &lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+          
+            <div class='article_footer'>
+              
+                
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+
+
+  
+
+  
+    
+    
+
+<section class="widget copyright  desktop mobile">
+  <div class='content'>
+    
+      <blockquote>
+        
+          
+            <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+          
+        
+          
+            <p>本文永久链接是：<a href=https://luhongyan.gitee.io/blog/post/4b16ba9e.html>https://luhongyan.gitee.io/blog/post/4b16ba9e.html</a></p>
+          
+        
+      </blockquote>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget qrcode  desktop mobile">
+  
+
+  <div class='content article-entry'>
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png'
+        
+          height='64px'
+        ></div>
+      
+    
+      
+        <div class='fancybox'><img src='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png'
+        
+          height='64px'
+        ></div>
+      
+    
+  </div>
+</section>
+
+  
+
+  
+
+
+              
+            </div>
+          
+        </div>
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-07-29T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>最后更新于：2020-07-29</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/hexo/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>hexo</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/Volantis/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Volantis</p></a></div>
+
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://luhongyan.gitee.io/blog/post/4b16ba9e.html&title=使用Hexo+Volantis搭建精美博客 - MR.L' BLOG&pics=https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/Volantis.jpg&summary=Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://luhongyan.gitee.io/blog/post/4b16ba9e.html&title=使用Hexo+Volantis搭建精美博客 - MR.L' BLOG&pics=https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/Volantis.jpg&summary=Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=https://luhongyan.gitee.io/blog/post/4b16ba9e.html&title=使用Hexo+Volantis搭建精美博客 - MR.L' BLOG&pics=https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/Volantis.jpg&summary=Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+      </section>
+    </article>
+  
+
+  
+    
+  <article class="post white-box reveal comments shadow">
+    <section class="article typo">
+      <p ct><i class='fas fa-comments'></i> 评论</p>
+      
+      <section id="comments">
+        <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+      </section>
+    </section>
+  </article>
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <div class='avatar'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/avatar_messi.jpg'/>
+        </div>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>☜ MR.L ☞</h2>
+        
+        
+        
+      </div>
+    
+
+    <div id="binft"></div>
+    <script>
+      var binft = function (r) {
+        function t() {
+          return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+          return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+          }
+          return n
+        }
+        function i() {
+          var t = o[c.skillI];
+          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["No cross,No crown"].map(function (r) {
+        return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+          text: "",
+          prefixP: -s,
+          skillI: 0,
+          skillP: 0,
+          direction: "forward",
+          delay: a,
+          step: g
+        };
+        i()
+      };
+      binft(document.getElementById('binft'));
+    </script>
+
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:303531551@qq.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境要求"><span class="toc-text">环境要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载与安装"><span class="toc-text">下载与安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-text">主题配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置导航栏"><span class="toc-text">设置导航栏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#播放器"><span class="toc-text">播放器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模块化布局"><span class="toc-text">模块化布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置文章作者信息"><span class="toc-text">配置文章作者信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#页面配置"><span class="toc-text">页面配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#布局模板"><span class="toc-text">布局模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#front-matter"><span class="toc-text">front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#显示迷你音乐播放器"><span class="toc-text">显示迷你音乐播放器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标题右边显示缩略图"><span class="toc-text">标题右边显示缩略图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加彩色滚动变换字体"><span class="toc-text">添加彩色滚动变换字体</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+    </div>
+    
+  
+  <footer class="clearfix">
+    <br><br>
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+              <a href="mailto:303531551@qq.com"
+                class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+        </div>
+      
+    
+      
+        <div class='copyright'>
+          Copyright © 2017-2020 MR.L&#39;S BLOG | 
+          <span id="timeDate">载入天数...</span>
+          <span id="times">载入时分秒...</span>
+          <script>
+              var now = new Date();
+              function createtime() {
+                  var grt= new Date("07/28/2020 00:00:00");
+                  now.setTime(now.getTime()+250);
+                  days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+                  hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+                  if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+                  mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+                  seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+                  snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+                  document.getElementById("timeDate").innerHTML = "本站已运行 "+dnum+" 天 ";
+                  document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+              }
+              setInterval("createtime()",250);
+            </script>
+          </div>
+      
+    
+  </footer>
+
+
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <div>
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+
+
+
+  <script>
+    
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/blog/" || "/";
+    if (!ROOT.endsWith('/')) ROOT += '/';
+  </script>
+
+
+
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/instant_page.js" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+
+
+
+  
+  
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg"];
+        if ('true' == 'true') {
+          function shuffle(arr){
+            /*From countercurrent-time*/
+            var n = arr.length;
+            while(n--) {
+              var index = Math.floor(Math.random() * n);
+              var temp = arr[index];
+              arr[index] = arr[n];
+              arr[n] = temp;
+            }
+          }
+          shuffle(imgs);
+        }
+        if ('') {
+          $('').backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        } else {
+          $.backstretch(
+            imgs,
+          {
+            duration: "20000",
+            fade: "1500"
+          });
+        }
+      });
+    </script>
+  
+
+
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+  
+    
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+  
+
+
+<!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
+
+  
+  
+<script src="/blog/js/valine.js"></script>
+
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    var valinePath = $.trim($('#valine-path').text()) === "none" ?
+            window.location.pathname : $.trim($('#valine-path').text());
+
+    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
+            "快来评论吧~" : $.trim($('#valine-placeholder').text());
+
+    var ALLPATH = '';
+    if(ALLPATH != '') valinePath = ALLPATH;
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: valinePlaceholder,
+      path: valinePath,
+      appId: "",
+      appKey: "",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+<!-- darkmodejs -->
+
+
+<!-- 复制 -->
+
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    var clipboard = new ClipboardJS('.btn-copy', {
+        target: function (trigger) {
+            return trigger.nextElementSibling
+        }
+    });
+    function wait(callback, seconds) {
+        var timelag = null;
+        timelag = window.setTimeout(callback, seconds)
+    }
+    function pjax_initCopyCode() {
+        var copyHtml = '';
+        copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+        copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
+        copyHtml += '</button>';
+        $(".highlight .code pre").before(copyHtml);
+        $(".article pre code").before(copyHtml);
+        clipboard.off('success').on('success', function (e) {
+            let $btn = $(e.trigger);
+            $btn.addClass('copied');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-check-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPIED';
+            wait(function () {
+                $icon.removeClass('fa-check-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        });
+        clipboard.off('error').on('error', function (e) {
+            e.clearSelection();
+            let $btn = $(e.trigger);
+            $btn.addClass('copy-failed');
+            let $icon = $($btn.find('i'));
+            $icon.removeClass('fa-copy');
+            $icon.addClass('fa-times-circle');
+            let $span = $($btn.find('span'));
+            $span[0].innerText = 'COPY FAILED';
+            wait(function () {
+                $icon.removeClass('fa-times-circle');
+                $icon.addClass('fa-copy');
+                $span[0].innerText = 'COPY'
+            }, 2000)
+        })
+    }
+    $(function () {
+        pjax_initCopyCode()
+    });
+</script>
+
+
+<!-- scrollreveal -->
+
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.6/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    function pjax_scrollrebeal() {
+      ScrollReveal().reveal('.l_main .reveal', {
+        distance: '32px',
+        duration: '800',
+        interval: '20',
+        scale: '1',
+        easing: 'ease-out'
+      });
+    }
+
+    $(function () {
+      pjax_scrollrebeal();
+    });
+  </script>
+
+<!-- ******************************** -->
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  function pjax_fancybox() {
+    $(".article-entry").find("img").not('.inline').not('a img').each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".article-entry").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  $(function () {
+    pjax_fancybox();
+  });
+</script>
+
+<!-- ******************************** -->
+
+
+  
+<script src="/blog/js/app.js"></script>
+
+
+
+
+  
+    
+<script src="/blog/js/search.js"></script>
+
+  
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js" data-pjax></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
+
+
+
+
+
+
+
+    
+      
+
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+<!-- 样式位于：source/css/_third-party/pjaxanimate.styl -->
+
+<div class="pjax-animate">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+    <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+    <div id="loading-bar-wrapper"><script>NProgress.configure({parent:"#loading-bar-wrapper",trickleSpeed: 100})</script></div>
+    <script>
+      window.ShowLoading = function() {
+        NProgress.start();
+      };
+      window.HideLoading = function() {
+        NProgress.done();
+      }
+    </script>
+  
+</div>
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+      
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      $.fancybox.close();    // 关闭弹窗
+      $('.nav-main').find('.list-v').not('.menu-phone').css("display","none"); // 移除小尾巴
+      $('.menu-phone.list-v').css("display","none"); // 移除小尾巴
+      $('.l_header .switcher .s-search').removeClass('active'); // 关闭移动端激活的搜索框
+      $('.l_header').removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      $('.wrapper').removeClass('sub'); // 跳转页面时关闭二级导航
+
+      $('.s-top').unbind('click');   // 解绑
+      $('.menu a').unbind('click');  // 解绑
+      $(window).unbind('resize');    // 解绑
+      $(window).unbind('scroll');    // 解绑
+      $(document).unbind('scroll');  // 解绑
+      $(document).unbind('click');   // 解绑
+      $('body').unbind('click');     // 解绑
+      window.ShowLoading();
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+      // _hmt.push(['_trackPageview', document.location.pathname]);
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+
+      try{
+        pjax_fancybox();
+        
+          
+          if ('') {
+            $('').backstretch("resize");
+          } else {
+            $.backstretch("resize");
+          }
+        
+        
+        
+          pjax_scrollrebeal();
+        
+        
+          pjax_initCopyCode();
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+      window.HideLoading();
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+      window.HideLoading();
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+  
+</body>
+</html>
