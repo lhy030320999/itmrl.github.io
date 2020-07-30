@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>分类：Volantis - MR.L&#39; BLOG</title>
+  <title>归档：2012/9 - MR.L&#39; BLOG</title>
   
 
   
@@ -366,7 +366,7 @@
   
 
 
-  <div class="l_body nocover">
+  <div class="l_body">
     <div class='body-wrapper' id="pjax-container">
       
         <!--此文件用来存放一些不方便取值的变量-->
@@ -386,16 +386,16 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("none" == "none") { // 移除封面
+  if ("blog" == "none") { // 移除封面
     document.getElementsByClassName('cover')[0].style.display = "none";
     document.getElementsByClassName('l_body')[0].classList.add("nocover");
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("none" == "blog") { // 半屏
+    if ("blog" == "blog") { // 半屏
       document.getElementsByClassName('cover')[0].classList.remove("full");
       document.getElementsByClassName('cover')[0].classList.add("half");
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("none" == "docs") { // 全屏
+    } else if ("blog" == "docs") { // 全屏
       document.getElementsByClassName('cover')[0].classList.remove("half");
       document.getElementsByClassName('cover')[0].classList.add("full");
       document.getElementsByClassName('scroll-down')[0].style.display = "";
@@ -409,18 +409,22 @@
       
       
 
-
 <div class='l_main'>
-  
-    
-      
+	
+		
   <section class="post-list ">
     
       
         
           
-            <div class='post-wrapper'>
-              <article class="post white-box shadow reveal ">
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post white-box shadow reveal ">
   
 
 
@@ -428,14 +432,12 @@
     
       
       
-        <a title='使用Hexo+Volantis搭建精美博客' href='/blog/post/4b16ba9e.html'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/lhy030320999/CDN-for-blog@master/images/Volantis.jpg'></a>
-      
       <div class="meta" id="header-meta">
         
           
   <h2 class="title">
-    <a href="/blog/post/4b16ba9e.html">
-      使用Hexo+Volantis搭建精美博客
+    <a href="/blog/post/976a6e28.html">
+      Flex ComboBox下拉列表不自动更新解决方法
     </a>
   </h2>
 
@@ -460,7 +462,7 @@
               <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>2020-07-27</p>
+    <p>2012-09-03</p>
   </a>
 </div>
 
@@ -470,9 +472,9 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/BLOG/Volantis/' rel="nofollow">
+    <a href='/blog/categories/WEB%E5%89%8D%E7%AB%AF/Flex/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>BLOG/Volantis</p>
+      <p>WEB前端/Flex</p>
     </a>
   </div>
 
@@ -484,13 +486,13 @@
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数统计：1.9k字</p>
+      <p>字数统计：103字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>阅读时长≈ 9分钟</p>
+      <p>阅读时长≈ 1分钟</p>
     </a>
   </div>
 
@@ -504,13 +506,6 @@
           
             
               
-  <div class="new-meta-item top-post" >
-    <a class='notlink'>
-      <i class="fas fa-angle-double-up fa-fw" aria-hidden="true" style="color: red;"></i>
-      <p style="color: red;">置顶</p>
-    </a>
-  </div>
-
             
           
         </div>
@@ -525,13 +520,13 @@
   <section class="article typo">
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Volantis，一个高度模块化和可定制化、功能相对完善的 Hexo 博客主题，既可以用作个人博客，也适合用来搭建文档。</p>
+        <p>公司系统出现了个BUG，级联查询Combobox时发现下拉列表不自动更新，只更新了选中项，列表却没有更新。<br>经过不懈的努力，终于找到问题的解决方法。</p>
       
     </div>
     
       
         <div class="readmore">
-          <a href="/blog/post/4b16ba9e.html" class="flat-box waves-effect waves-block">
+          <a href="/blog/post/976a6e28.html" class="flat-box waves-effect waves-block">
             阅读全文
           </a>
         </div>
@@ -540,13 +535,7 @@
   </section>
 </article>
 
-            </div>
-          
-        
-      
-    
-    
-      
+          </div>
         
       
     
@@ -560,9 +549,7 @@
   
 
 
-    
-  
-
+	
 </div>
 <aside class='l_side'>
   
@@ -752,6 +739,14 @@
 
 </aside>
 
+
+
+
+
+	<!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+	
+
+	
 
 
     </div>
