@@ -262,7 +262,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="搜索" />
         </form>
       </div>
 
@@ -380,9 +380,6 @@
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-permalink"></div>
   
-  <div id="valine-path">none</div>
-  <div id="valine-placeholder">none</div>
-  
   
 </div>
 
@@ -473,9 +470,27 @@
               
   
   <div class='new-meta-item category'>
-    <a href='/blog/categories/%E5%8D%9A%E5%AE%A2/Volantis/' rel="nofollow">
+    <a href='/blog/categories/BLOG/Volantis/' rel="nofollow">
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <p>博客/Volantis</p>
+      <p>BLOG/Volantis</p>
+    </a>
+  </div>
+
+
+            
+          
+            
+              
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数统计：1.9k字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>阅读时长≈ 9分钟</p>
     </a>
   </div>
 
@@ -627,6 +642,22 @@
             </a>
           
         
+          
+            <a href="https://github.com/lhy030320999"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=303531551&site=qq&menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
       </div>
     
   </div>
@@ -641,7 +672,7 @@
 
   <section class="widget category shadow desktop">
     
-  <header>
+  <header class="custom">
     
       <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
     
@@ -652,13 +683,13 @@
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/blog/categories/%E5%8D%9A%E5%AE%A2/" href="/blog/categories/%E5%8D%9A%E5%AE%A2/"
-            id="blogcategoriesE58D9AE5AEA2"
-            ><div class='name'>博客</div><div class='badge'>(1)</div></a></li>
+            title="/blog/categories/BLOG/" href="/blog/categories/BLOG/"
+            id="blogcategoriesBLOG"
+            ><div class='name'>BLOG</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/blog/categories/%E5%8D%9A%E5%AE%A2/Volantis/" href="/blog/categories/%E5%8D%9A%E5%AE%A2/Volantis/"
-            id="blogcategoriesE58D9AE5AEA2Volantis"
+            title="/blog/categories/BLOG/Volantis/" href="/blog/categories/BLOG/Volantis/"
+            id="blogcategoriesBLOGVolantis"
             ><div class='name'>Volantis</div><div class='badge'>(1)</div></a></li>
         
       </ul>
@@ -675,9 +706,9 @@
 
   <section class="widget tagcloud shadow desktop mobile">
     
-  <header>
+  <header class="custom">
     
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <a href='/blog/tags/'><i class="fas fa-fire fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
     
   </header>
 
@@ -710,6 +741,22 @@
             
               <a href="mailto:303531551@qq.com"
                 class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://github.com/lhy030320999"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=303531551&amp;site=qq&amp;menu=yes"
+                class="social fab fa-qq flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
               </a>
@@ -776,7 +823,7 @@
 
     <script type="text/javascript">
       $(function(){
-        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg"];
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"];
         if ('true' == 'true') {
           function shuffle(arr){
             /*From countercurrent-time*/
@@ -823,79 +870,6 @@
 
 
 <!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
-
-  
-  
-<script src="/blog/js/valine.js"></script>
-
-
-<script>
-  var GUEST_INFO = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail'.split(',').filter(function (item) {
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
-  var requiredFields = 'nick'.split(',').filter(function (item) {
-    return REQUIRED_FIELDS.indexOf(item) > -1
-  });
-
-  function emoji(path, idx, ext) {
-    return path + "/" + path + "-" + idx + "." + ext;
-  }
-
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-
-  function pjax_valine() {
-    var valinePath = $.trim($('#valine-path').text()) === "none" ?
-            window.location.pathname : $.trim($('#valine-path').text());
-
-    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
-            "快来评论吧~" : $.trim($('#valine-placeholder').text());
-
-    var ALLPATH = '';
-    if(ALLPATH != '') valinePath = ALLPATH;
-
-    var valine = new Valine();
-    valine.init({
-      el: '#valine_container',
-      meta: meta,
-      placeholder: valinePlaceholder,
-      path: valinePath,
-      appId: "",
-      appKey: "",
-      pageSize: '10',
-      avatar: 'robohash',
-      lang: 'zh-cn',
-      visitor: 'true',
-      highlight: 'true',
-      mathJax: 'false',
-      enableQQ: 'true',
-      requiredFields: requiredFields,
-      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps
-    })
-  }
-
-  $(function () {
-    pjax_valine();
-  });
-</script>
-
 
 
 
@@ -1180,8 +1154,6 @@
         
           pjax_initCopyCode();
         
-        
-          pjax_valine();
         
         
         

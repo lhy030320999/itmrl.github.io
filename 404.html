@@ -258,7 +258,7 @@
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
           <i class="icon fas fa-search fa-fw"></i>
-          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <input type="text" class="input u-search-input" placeholder="搜索" />
         </form>
       </div>
 
@@ -376,9 +376,6 @@
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-permalink">https://luhongyan.gitee.io/blog/404.html</div>
   
-  <div id="valine-path">/404.html</div>
-  <div id="valine-placeholder">请留言告诉我您要访问哪个页面找不到了</div>
-  
   
 </div>
 
@@ -445,6 +442,7 @@
 
 
   <section class='meta' id="footer-meta">
+    <hr>
     <div class='new-meta-box'>
       
     </div>
@@ -459,18 +457,7 @@
 
   
     
-  <article class="post white-box reveal comments shadow">
-    <section class="article typo">
-      <p ct><i class='fas fa-comments'></i> 评论</p>
-      
-      <section id="comments">
-        <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-      </section>
-    </section>
-  </article>
+  
 
 
   
@@ -502,6 +489,22 @@
             
               <a href="mailto:303531551@qq.com"
                 class="social fas fa-envelope flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="https://github.com/lhy030320999"
+                class="social fab fa-github flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+              </a>
+            
+          
+            
+              <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=303531551&amp;site=qq&amp;menu=yes"
+                class="social fab fa-qq flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer">
               </a>
@@ -568,7 +571,7 @@
 
     <script type="text/javascript">
       $(function(){
-        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/2884F904-F1F3-479E-AE27-5EBC291B63B0.jpeg"];
+        var imgs=["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg"];
         if ('true' == 'true') {
           function shuffle(arr){
             /*From countercurrent-time*/
@@ -615,79 +618,6 @@
 
 
 <!-- 评论 （PS：只对 valine 做了 Pjax 兼容） -->
-
-  
-  
-<script src="/blog/js/valine.js"></script>
-
-
-<script>
-  var GUEST_INFO = ['nick', 'mail', 'link'];
-  var meta = 'nick,mail'.split(',').filter(function (item) {
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
-  var requiredFields = 'nick'.split(',').filter(function (item) {
-    return REQUIRED_FIELDS.indexOf(item) > -1
-  });
-
-  function emoji(path, idx, ext) {
-    return path + "/" + path + "-" + idx + "." + ext;
-  }
-
-  var emojiMaps = {};
-  for (var i = 1; i <= 54; i++) {
-    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
-  }
-  for (var i = 1; i <= 101; i++) {
-    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
-  }
-  for (var i = 1; i <= 116; i++) {
-    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
-  }
-  for (var i = 1; i <= 125; i++) {
-    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
-  }
-  for (var i = 1; i <= 4; i++) {
-    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
-  }
-
-  function pjax_valine() {
-    var valinePath = $.trim($('#valine-path').text()) === "none" ?
-            window.location.pathname : $.trim($('#valine-path').text());
-
-    var valinePlaceholder = $.trim($('#valine-placeholder').text()) === "none" ?
-            "快来评论吧~" : $.trim($('#valine-placeholder').text());
-
-    var ALLPATH = '';
-    if(ALLPATH != '') valinePath = ALLPATH;
-
-    var valine = new Valine();
-    valine.init({
-      el: '#valine_container',
-      meta: meta,
-      placeholder: valinePlaceholder,
-      path: valinePath,
-      appId: "",
-      appKey: "",
-      pageSize: '10',
-      avatar: 'robohash',
-      lang: 'zh-cn',
-      visitor: 'true',
-      highlight: 'true',
-      mathJax: 'false',
-      enableQQ: 'true',
-      requiredFields: requiredFields,
-      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
-      emojiMaps: emojiMaps
-    })
-  }
-
-  $(function () {
-    pjax_valine();
-  });
-</script>
-
 
 
 
@@ -972,8 +902,6 @@
         
           pjax_initCopyCode();
         
-        
-          pjax_valine();
         
         
         
