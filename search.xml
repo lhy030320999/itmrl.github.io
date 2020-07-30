@@ -44,14 +44,16 @@
           
           <category> 中间件 </category>
           
+          <category> ES </category>
+          
       </categories>
       
       
         <tags>
             
-            <tag> ES </tag>
-            
             <tag> 中间件 </tag>
+            
+            <tag> ES </tag>
             
         </tags>
       
